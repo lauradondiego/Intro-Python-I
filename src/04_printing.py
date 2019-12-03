@@ -17,4 +17,9 @@ print("x is %d, y is %.2f, z is '%s' " % (x, y, z))
 print("x is {}, y is {:.2f}, z is '{}' ".format(x, y, z))
 
 # Finally, print the same thing using an f-string
-print(f"x is {x} ")  # THIS ONE WONT WORK
+print(f"x is {x}, y is {y:.2f}, z is '{z}' ")
+
+# the bottom one wouldnt work until I added
+# "code-runner.executorMap": {
+#        "python": "python3 -u"
+#    } to the bottom of the settings in coderunner extension here
