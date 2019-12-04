@@ -11,10 +11,13 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-
-# for i in sys.argv:
-#     print(i)
 print(sys.argv)
+for i in sys.argv:
+    print(i)
+    #write as many args as u want in the terminal, pizza, tacos, etc
+# write this in terminal
+# (Intro-Python-I) bash-3.2$ ---- python3 03_modules.py tacos pizza
+# you will use this again in cal to print
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
