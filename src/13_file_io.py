@@ -23,4 +23,6 @@ f.close()
 # YOUR CODE HERE
 f = open("bar.txt", "wt")
 f.write("line 1")
+f.write("line 2")
+f.write("line 3")
 f.close()

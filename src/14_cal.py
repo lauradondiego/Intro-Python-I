@@ -22,3 +22,14 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+print(calendar.TextCalendar().formatmonth(1777, 1))
+
+args = ['whatever', datetime.now().month,datetime.now().year]
+
+if len(sys.argv) == 3:
+  args = sys.argv
+elif len(sys.argv == 2): #this means they only gave the month
+  args[1] = sys.argv[1]
+
+print(calendar.TextCalendar().formatmonth(args[1],args[2]))
