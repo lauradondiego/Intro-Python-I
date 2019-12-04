@@ -9,7 +9,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 
 # YOUR CODE HERE
-f = open("foo.txt", "r")
+f = open("src/foo.txt", "r")
 print(f.read())
 f.close()
 # this isnt opening on the output when I run the code for some reason
