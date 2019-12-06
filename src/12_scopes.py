@@ -4,13 +4,17 @@
 # When you use a variable in a function, it's local in scope to the function.
 x = 12
 
+
 def changeX():
     x = 99
+    print(x)
+
 
 changeX()
 
 # This prints 12. What do we have to modify in changeX() to get it to print 99?
-print(x)
+# I moved the print(x) to line 10 inside the local scope and commented out the one below
+# print(x)
 
 
 # This nested function has a similar problem.
@@ -20,11 +24,13 @@ def outer():
 
     def inner():
         y = 999
-
+        print(y)
     inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999? Google "python nested function scope".
-    print(y)
+    # I added print(y) to line 27 within the inner scope and commented out below
+    # print(y)
+
 
 outer()
